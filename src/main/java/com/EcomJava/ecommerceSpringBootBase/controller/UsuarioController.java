@@ -20,7 +20,7 @@ public class UsuarioController {
     public String home(Model model) {
         List<Producto> productos = productoService.findAll();
         model.addAttribute("productos", productos);
-        return "usuario/home";
+        return "/usuario/home";
     }
 
     @GetMapping("/registro")
